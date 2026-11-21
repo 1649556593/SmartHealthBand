@@ -1,0 +1,5 @@
+# Batch scripts must keep CRLF line endings.
+# cmd.exe can misparse LF-only .cmd/.bat files (label jumps, parenthesized
+# blocks), so force CRLF in the working tree for everyone who clones.
+*.cmd text eol=crlf
+*.bat text eol=crlf
